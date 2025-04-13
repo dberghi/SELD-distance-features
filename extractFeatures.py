@@ -34,10 +34,10 @@ def main():
     # Extract STFT of direct and reverberant components
     dir, rev = extractDirectAndReverb(w=audio, n_fft=n_fft, hop_length=hop_length) # STFTs (T, n_fft/2+1)
 
-    # you can either use dir and rev independently (DR features), or compute their ratio (DRR features)
+    # you can either use dir and rev independently (D+R features), or compute their ratio (DRR features)
     dir_logmel = extractLogMelSpec(dir, fs, n_fft, n_mels, fmin=0, fmax=fs//2) # (T, n_mel)
     rev_logmel = extractLogMelSpec(rev, fs, n_fft, n_mels, fmin=0, fmax=fs//2) # (T, n_mel)
-    DR = np.stack((dir_logmel, rev_logmel), axis=0) # DR features # (2, T, n_mel)
+    DR = np.stack((dir_logmel, rev_logmel), axis=0) # D+R features # (2, T, n_mel)
 
     # compute power spectral densities
     dir_psd = abs(dir) ** 2
