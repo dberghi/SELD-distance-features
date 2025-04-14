@@ -1,7 +1,7 @@
 # Distance Input Features for 3D SELD
 
 This is a Python implementation of the feature extraction methods described in the paper "Reverberation-based Features for Sound Event Localization and Detection with Distance Estimation" (preprint).
-> D. Berghi, P. J. B. Jackson. Reverberation-based Features for Sound Event Localization and Detection with Distance Estimation. ArXiv (preprint), 2025. [[**arXiv**]](https://arxiv.org/)
+> D. Berghi, P. J. B. Jackson. Reverberation-based Features for Sound Event Localization and Detection with Distance Estimation. arXiv preprint arXiv: 2504.08644, 2025. [[**arXiv**]](https://arxiv.org/abs/2504.08644)
 
 The paper introduces two novel approaches to extract distance features for 3D SELD based on reverberation. The first consists of extracting direct and reverberant signal components. These can either be used independently (**D+R features**) or in the form of direct-to-reverberant ratio in log mel space (**DRR features**). The second computes the short-term power of the signal autocorrelation to provide the model with insights into early reflections (**stpACC features**).
 
@@ -55,7 +55,7 @@ ds_factor = 8 # downsampling factor
 
 Please consider citing our paper if you use these features in your work. Many thanks!
 
-> Davide Berghi and Philip J. B. Jackson. Reverberation-based Features for Sound Event Localization and Detection with Distance Estimation. ArXiv (preprint), 2025.
+> Davide Berghi and Philip J. B. Jackson. Reverberation-based Features for Sound Event Localization and Detection with Distance Estimation. arXiv preprint arXiv: 2504.08644, 2025.
 
 ## References
 
