@@ -47,7 +47,7 @@ downsample = True
 ds_factor = 8 # downsampling factor
 ```
 
-### Input Features
+### Visualization of the Distance Features
 
 <img src="images/Features.png">
 
